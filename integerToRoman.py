@@ -1,9 +1,5 @@
 # LeetCode Challenge #12 - Integer to Roman
-<<<<<<< HEAD
-# Convert Numbers to Roman Numerals
-=======
 # Convert Integers to Roman Numerals
->>>>>>> b0f533b1cd2ad1b922ae2e25dad97abc65ba7b80
 
 class Solution:
     def intToRoman(self, num: int) -> str:
