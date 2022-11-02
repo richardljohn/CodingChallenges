@@ -1,8 +1,5 @@
 #Leetcode Challenge #1 - Two Sum
 
-from tkinter import N
-
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
