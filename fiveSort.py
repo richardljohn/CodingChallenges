@@ -21,7 +21,6 @@ def fiveSort(nums):
         
     return nums
 
-
 print(fiveSort([5, 5, 1, 2, 3]))
 
 # Have a pointer at the end of the array
