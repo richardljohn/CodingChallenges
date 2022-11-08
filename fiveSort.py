@@ -2,6 +2,9 @@ def fiveSort(nums):
     if len(nums) == 0:
         return
 
+
+        
+
     i = 0
     curr = len(nums) - 1
     while i < curr:
