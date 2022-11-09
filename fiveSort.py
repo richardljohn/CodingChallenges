@@ -5,19 +5,19 @@ def fiveSort(nums):
     i = 0
     curr = len(nums) - 1
     while i < curr:
-        if nums[i] != 5:
-            i += 1
-        else: 
-            nums[i], nums[curr] = nums[curr], nums[i]
-            curr -= 1
-            i += 1
-        # if nums[curr] == 5: 
-        #     curr -= 1
-        # elif nums[i] == 5: 
-        #     nums[i], nums[curr] = nums[curr], nums[i]
+        # if nums[i] != 5:
         #     i += 1
         # else: 
+        #     nums[i], nums[curr] = nums[curr], nums[i]
+        #     curr -= 1
         #     i += 1
+        if nums[curr] == 5: 
+            curr -= 1
+        elif nums[i] == 5: 
+            nums[i], nums[curr] = nums[curr], nums[i]
+            i += 1
+        else: 
+            i += 1
         
     return nums
 
