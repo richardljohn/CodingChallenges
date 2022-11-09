@@ -28,3 +28,5 @@ print(fiveSort([5, 5, 1, 2, 3]))
 # If you encounter a 5:
 # Swap current place with pointer. 
 # move pointer up by 1.
+# when loop reaches same spot as the pointer, end the loop.
+# else, continue.
