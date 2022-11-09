@@ -23,6 +23,7 @@ def fiveSort(nums):
 
 print(fiveSort([5, 5, 1, 2, 3]))
 
+# Pseudocode.
 # Have a pointer at the end of the array
 # For loop. 
 # If you encounter a 5:
