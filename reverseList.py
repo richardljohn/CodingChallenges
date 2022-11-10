@@ -15,11 +15,13 @@ c.next = d
 d.next = e
 
 def reverseList(head):
-    prev = None 
-    curr = head 
-    while curr is not None: 
-        next = curr.next
-        curr.next = prev
-        prev = curr 
-        curr = next
-    return prev
+    if head is not None: 
+        prev = None 
+        curr = head 
+        while curr is not None: 
+            next = curr.next
+            curr.next = prev
+            prev = curr 
+            curr = next
+        return prev
+    return
