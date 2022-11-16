@@ -3,54 +3,31 @@ class Node:
         self.val = val
         self.next = None
 
-a = Node(1)
-b = Node(2)
-c = Node(3)
-d = Node(4)
-e = Node(5)
 
-a.next = b
-b.next = c
-d.next = e
-
-def zipperLists(headOne, headTwo):
-    if headOne == None or headTwo == None:
-        return
+def zippperLists(headOne, headTwo):
     
-    currOne, currTwo = headOne, headTwo
-    count = 1
-    newHead = Node(currOne.val)
-    currOne = currOne.next
-    count += 1
-    while currOne.next != None and currTwo.next != None: 
+    tail = headOne
+    currOne = headOne.next
+    currTwo = headTwo
+    count = 0
+
+    while currOne is not None and currTwo is not None: 
         if count % 2 == 0: 
-            newHead.next = currTwo
-            count += 1
-            newHead = newHead.next
-            currTwo = currTwo.next
-        if count % 2 == 1: 
-            newHead.next = currOne
-            count += 1
-            newhead = newHead.next
-            currOne = currOne.next
-    if currOne.next == None: 
-        curr = currTwo
-        while curr != None: 
-            newHead.next = curr 
-            newHead = newHead.next
-            curr = curr.next
-    if currTwo.next == None: 
-        curr = currOne
-        while curr != None: 
-            newHead.next = curr 
-            newHead = newHead.next
-            curr = curr.next
-    return newHead
+            tail.next = headTwo
+            headTwo = headTwo.next
+        else: 
+            tail.next = headOne
+            headOne = headOne.next
+        count += 1
+        tail = tail.next
 
-print(zipperLists(a, d))
+    if currOne is None: 
+        tail.next = currTwo
+    
+    if currTwo is None: 
+        tail.next = currOne
 
-
-
+    return headOne
 
 # Pseudocode. 
 # Make a new list
