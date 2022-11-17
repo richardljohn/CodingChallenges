@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
 
-def zippperLists(headOne, headTwo):
+def zipperLists(headOne, headTwo):
     
     tail = headOne
     currOne = headOne.next
