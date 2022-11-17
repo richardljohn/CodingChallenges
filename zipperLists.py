@@ -13,19 +13,19 @@ def zippperLists(headOne, headTwo):
 
     while currOne is not None and currTwo is not None: 
         if count % 2 == 0: 
-            tail.next = headTwo
-            headTwo = headTwo.next
+            tail.next = currTwo
+            currTwo = currTwo.next
         else: 
-            tail.next = headOne
-            headOne = headOne.next
+            tail.next = currOne
+            currOne = currOne.next
         count += 1
         tail = tail.next
 
-    if currOne is None: 
-        tail.next = currTwo
-    
-    if currTwo is None: 
+    if currOne is not None: 
         tail.next = currOne
+    
+    if currTwo is not None: 
+        tail.next = currTwo
 
     return headOne
 
