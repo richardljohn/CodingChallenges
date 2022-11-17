@@ -56,8 +56,7 @@ s.next = t
 n = merge_lists(a, q)
 
 while n is not None: 
-    print(n.val)
-    print(" -> ")
+    print(str(n.val) + " ->", end=" ")
     n = n.next
 print("None")  
 # 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 12 -> 20 -> 25 -> 28
