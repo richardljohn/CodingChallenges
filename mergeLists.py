@@ -34,11 +34,14 @@ c = Node(10)
 d = Node(12)
 e = Node(20)
 f = Node(28)
+g = Node(32)
+
 a.next = b
 b.next = c
 c.next = d
 d.next = e
 e.next = f
+f.next = g
 # 5 -> 7 -> 10 -> 12 -> 20 -> 28
 
 q = Node(6)
