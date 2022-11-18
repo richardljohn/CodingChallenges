@@ -70,3 +70,6 @@ print("None")
 # If one list is none, add all of the other list and return the head. 
 # If the other is none, add the other.  
 # Output is good.
+# Properly Working.
+#
+#
