@@ -1,5 +1,3 @@
-import math
-
 def twoSumLess(nums, k):
     maxNum = (float("-inf"))
     for i in range(0, len(nums) - 1, 1):
@@ -8,6 +6,7 @@ def twoSumLess(nums, k):
             if sum < k and sum > maxNum: 
                 maxNum = sum
     return maxNum if maxNum >= 0 else -1
+
 
 # Test Case 1: Will output 58
 print(twoSumLess([34, 23, 1, 24, 75, 33, 54, 8], 60))
