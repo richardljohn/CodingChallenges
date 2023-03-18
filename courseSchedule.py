@@ -5,5 +5,7 @@ class Solution(object):
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
-        :rtype: bool
+
         """
+
+
