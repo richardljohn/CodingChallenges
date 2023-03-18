@@ -1,6 +1,6 @@
 # LeetCode #207 - Course Schedule
 # Data structures used: HashMap (Adjacent Map) and Set
-
+# Base Case: If Loop Detected it is not true. 
 
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
