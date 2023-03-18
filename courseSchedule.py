@@ -7,5 +7,3 @@ class Solution(object):
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-
-        
