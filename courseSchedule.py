@@ -1,4 +1,5 @@
 # LeetCode #207 - Course Schedule
+# Data structures used: HashMap (Adjacent Map) and Set
 
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
