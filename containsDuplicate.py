@@ -1,7 +1,6 @@
 # LeetCode #217 - Contains Duplicate
 
-class Solution(object):
-    def containsDuplicate(self, nums):
+def containsDuplicate(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -15,4 +14,5 @@ class Solution(object):
             duplicate.add(nums[i])
         return False
 
-print(Solution.containsDuplicate([1, 2, 3,]))
+print(containsDuplicate([1, 2, 3, 1]))
+print(containsDuplicate([1, 2, 3, 4]))
