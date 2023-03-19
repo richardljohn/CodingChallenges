@@ -6,6 +6,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        
         duplicate = set() 
 
         for i in range(len(nums)):
@@ -14,4 +15,4 @@ class Solution(object):
             duplicate.add(nums[i])
         return False
 
-print(Solution.containsDuplicate([1, 2, 3, 1]))
+print(Solution.containsDuplicate([1, 2, 3,]))
