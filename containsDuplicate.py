@@ -1,6 +1,6 @@
 # LeetCode #217 - Contains Duplicate
 
-def containsDuplicate(self, nums):
+def containsDuplicate(nums):
         """
         :type nums: List[int]
         :rtype: bool
