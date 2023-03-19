@@ -12,8 +12,9 @@ def containsDuplicate(self, nums):
             if nums[i] in duplicate:
                 return True
             duplicate.add(nums[i])
-            
+
         return False
 
 print(containsDuplicate([1, 2, 3, 1])) #True
 print(containsDuplicate([1, 2, 3, 4])) #False
+print(containsDuplicate([1, 2, 3, 3])) #True
