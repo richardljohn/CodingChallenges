@@ -14,5 +14,5 @@ def containsDuplicate(self, nums):
             duplicate.add(nums[i])
         return False
 
-print(containsDuplicate([1, 2, 3, 1]))
-print(containsDuplicate([1, 2, 3, 4]))
+print(containsDuplicate([1, 2, 3, 1])) #True
+print(containsDuplicate([1, 2, 3, 4])) #False
