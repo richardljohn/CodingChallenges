@@ -6,4 +6,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        
+        duplicate = set() 
+
+        for i in range(len(nums)):
+            if nums[i] in duplicate:
+                return True
+            duplicate.add(nums[i])
+        return False
+
