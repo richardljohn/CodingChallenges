@@ -14,3 +14,4 @@ class Solution(object):
             duplicate.add(nums[i])
         return False
 
+print(Solution.containsDuplicate([1, 2, 3, 1]))
