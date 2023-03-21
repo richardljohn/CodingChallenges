@@ -7,11 +7,9 @@ def maxProduct(nums):
         """
         res = max(nums)
         currMin, currMax = 1, 1
-
         for num in nums: 
             if num == 0: 
-                currMin = 1
-                currMax = 1
+                currMin, currMax = 1, 1
                 continue
 
             tmp = currMax * num
