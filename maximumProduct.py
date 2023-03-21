@@ -5,7 +5,6 @@ def maxProduct(nums):
         :type nums: List[int]
         :rtype: int
         """
-
         res = max(nums)
         currMin, currMax = 1, 1
 
@@ -21,5 +20,6 @@ def maxProduct(nums):
             res = max(res, currMax)
         return res
 
-print(maxProduct([2,3,-2,4]))
-print(maxProduct([-2,0,-1]))
+#Test Cases
+print(maxProduct([2,3,-2,4])) #6
+print(maxProduct([-2,0,-1])) #0
