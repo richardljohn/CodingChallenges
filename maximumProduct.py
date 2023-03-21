@@ -18,6 +18,6 @@ def maxProduct(nums):
             res = max(res, currMax)
         return res
 
-#Test Cases
+#Test Cases Passed
 print(maxProduct([2,3,-2,4])) #6
 print(maxProduct([-2,0,-1])) #0
