@@ -1,21 +1,25 @@
 # LeetCode #152 - Maximum Product
 
-class Solution(object):
-    def maxProduct(self, nums):
+def maxProduct(nums):
         """
         :type nums: List[int]
         :rtype: int
         """
 
-        maxProd = nums[0]
-        currProd = 1
+        res = max(nums)
+        currMin, currMax = 1, 1
 
+        for num in nums: 
+            if num == 0: 
+                currMin = 1
+                currMax = 1
+                continue
 
-        for num in nums:
-            if currProd < 0 and num > 0:
-                currProd = 1
-            currProd *= num
-            maxProd = max(maxProd, currProd)
-        
-        return maxProd
+            tmp = currMax * num
+            currMax = max(num * currMax, num * currMin, num)
+            currMin = min(tmp, num * currMin, num)
+            res = max(res, currMax)
+        return res
 
+print(maxProduct([2,3,-2,4]))
+print(maxProduct([-2,0,-1]))
