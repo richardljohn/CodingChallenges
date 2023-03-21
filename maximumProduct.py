@@ -12,7 +12,7 @@ def maxProduct(nums):
                 currMin, currMax = 1, 1
                 continue
 
-            tmp = currMin * num
+            tmp = currMax * num
             currMax = max(num * currMax, num * currMin, num)
             currMin = min(tmp, num * currMin, num)
             res = max(res, currMax)
