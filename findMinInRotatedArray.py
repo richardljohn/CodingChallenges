@@ -1,7 +1,6 @@
 # LeetCode #153 - Find Minimum in Rotated Array
 
-class Solution(object):
-    def findMin(self, nums):
+def findMin(nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -21,3 +20,8 @@ class Solution(object):
             else: 
                 r = m - 1 
         return res 
+
+# Test Cases 
+print(findMin([3,4,5,1,2])) #1
+print(findMin([4,5,6,7,0,1,2])) #0
+print(findMin([11,13,15,17])) #11
