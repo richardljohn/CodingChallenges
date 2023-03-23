@@ -7,4 +7,6 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        
+        mid = len(nums)/ 2
+
+        if nums[mid] > 
