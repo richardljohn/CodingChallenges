@@ -27,3 +27,4 @@ class Solution(object):
                     l = mid + 1
         
         return -1
+        
