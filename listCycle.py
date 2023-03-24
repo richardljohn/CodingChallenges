@@ -21,7 +21,7 @@ def hasCycle(head):
         head = head.next
     return False
 
-#Test Cases 
+#Test Case 1
 a = Node(3)
 b = Node(2)
 c = Node(0)
@@ -32,11 +32,13 @@ c.next = d
 d.next = b
 print(hasCycle(a)) #True
 
+#Test Case 2
 one = Node(1)
 two = Node(2)
 one.next = two
 two.next = one
 print(hasCycle(one)) #True
 
+#Test Case 3
 first = Node(1)
 print(hasCycle(first)) #False
