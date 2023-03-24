@@ -30,13 +30,13 @@ a.next = b
 b.next = c
 c.next = d
 d.next = b
-print(hasCycle(a))
+print(hasCycle(a)) #True
 
 one = Node(1)
 two = Node(2)
 one.next = two
 two.next = one
-print(hasCycle(one))
+print(hasCycle(one)) #True
 
 first = Node(1)
-print(hasCycle(first))
+print(hasCycle(first)) #False
