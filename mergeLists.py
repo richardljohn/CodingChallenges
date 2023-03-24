@@ -8,7 +8,6 @@ def merge_lists(headOne, headTwo):
     dummyHead = Node(None)
     tail = dummyHead
     currOne, currTwo = headOne, headTwo
-
     
     while currOne is not None and currTwo is not None: 
         if currOne.val > currTwo.val: 
