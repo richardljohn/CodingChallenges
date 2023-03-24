@@ -37,3 +37,6 @@ two = Node(2)
 one.next = two
 two.next = one
 print(hasCycle(one))
+
+first = Node(1)
+print(hasCycle(first))
