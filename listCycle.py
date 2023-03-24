@@ -14,3 +14,5 @@ def hasCycle(head):
         visited.add(head)
         head = head.next
     return False
+
+#Test Cases 
