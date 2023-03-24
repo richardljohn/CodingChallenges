@@ -31,3 +31,9 @@ b.next = c
 c.next = d
 d.next = b
 print(hasCycle(a))
+
+one = Node(1)
+two = Node(2)
+one.next = two
+two.next = one
+print(hasCycle(one))
