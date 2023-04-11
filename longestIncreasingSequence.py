@@ -8,6 +8,7 @@ class Solution(object):
         :rtype: int
         """
         LIS = [1] * len(nums)
+        #print(LIS)
 
         for i in range(len(nums) - 1, -1, -1):
             for j in range(i + 1, len(nums)):
