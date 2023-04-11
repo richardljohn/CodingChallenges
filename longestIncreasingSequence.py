@@ -1,4 +1,5 @@
 # LeetCode #300 - Longest Increasing Subsequence
+# Dynamic Programming
 
 class Solution(object):
     def lengthOfLIS(self, nums):
