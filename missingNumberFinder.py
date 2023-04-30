@@ -1,4 +1,4 @@
-# Leetcode #268 - Missing Number
+# Leetcode #268 - Missing Number (Solved)
 
 class Solution(object):
     def missingNumber(self, nums):
