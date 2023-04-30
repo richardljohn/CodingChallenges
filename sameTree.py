@@ -1,4 +1,4 @@
-# Leetcode #100 - Same Tree
+# Leetcode #100 - Same Tree 
 
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -6,6 +6,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution(object):
     def isSameTree(self, p, q):
         """
