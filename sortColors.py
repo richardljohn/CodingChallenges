@@ -1,4 +1,5 @@
 #Leetcode Challenge #75 - Sort Colors 
+
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
 
@@ -7,8 +8,7 @@ class Solution:
             nums[i] = nums[j]
             nums[j] = temp
 
-        l, r = 0, len(nums) - 1
-        i = 0
+        i, l, r = 0, 0, len(nums) - 1
 
         while i <= r: 
             if nums[i] == 0: 
