@@ -22,3 +22,8 @@ class Solution(object):
                 return False
         
         return True
+
+# Test Cases 
+s = Solution()
+print(s.isAnagram("anagram", "nagamar")) #True
+print(s.isAnagram("anagramm", "nagamar")) #True
