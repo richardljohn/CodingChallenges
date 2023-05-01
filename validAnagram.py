@@ -1,4 +1,4 @@
-# LeetCode #242 - Valid Anagram
+# LeetCode #242 - Valid Anagram (Done)
 
 class Solution(object):
     def isAnagram(self, s, t):
