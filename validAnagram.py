@@ -26,4 +26,6 @@ class Solution(object):
 # Test Cases 
 s = Solution()
 print(s.isAnagram("anagram", "nagamar")) #True
-print(s.isAnagram("anagramm", "nagamar")) #True
+print(s.isAnagram("anagramm", "nagamar")) #False
+print(s.isAnagram("car", "rat")) #True
+
