@@ -30,14 +30,14 @@ class Solution(object):
 
 s = Solution()
 # Test Cases 
-head = [1,2,3,4,5]
+head = ListNode([1,2,3,4,5])
 n = 2
 s.removeNthFromEnd(head, n)
 
-head = [1]
+head = ListNode([1])
 n = 1
 s.removeNthFromEnd(head, n)
 
-head = [1,2]
+head = ListNode([1,2])
 n = 1
 s.removeNthFromEnd(head, n)
