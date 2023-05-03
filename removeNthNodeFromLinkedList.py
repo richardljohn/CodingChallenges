@@ -32,12 +32,12 @@ s = Solution()
 # Test Cases 
 head = ListNode([1,2,3,4,5])
 n = 2
-s.removeNthFromEnd(head, n)
+print(s.removeNthFromEnd(head, n))
 
 head = ListNode([1])
 n = 1
-s.removeNthFromEnd(head, n)
+print(s.removeNthFromEnd(head, n))
 
 head = ListNode([1,2])
 n = 1
-s.removeNthFromEnd(head, n)
+print(s.removeNthFromEnd(head, n))
