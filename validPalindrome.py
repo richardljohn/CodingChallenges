@@ -26,6 +26,9 @@ class Solution(object):
 
 # Test Cases
 s = Solution()
+print(s.isPalindrome("A man, a plan, a canal: Panama"))
+print(s.isPalindrome("My name is Naruto Uzumaki"))
 print(s.isPalindrome("0P"))
 print(s.isPalindrome("Racecar"))
 print(s.isPalindrome("Hey bro"))
+print(s.isPalindrome("Racecar"))
