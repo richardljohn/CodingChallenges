@@ -27,3 +27,4 @@ class Solution(object):
 s = Solution()
 print(s.isPalindrome("0P"))
 print(s.isPalindrome("Racecar"))
+print(s.isPalindrome("Hey bro"))
