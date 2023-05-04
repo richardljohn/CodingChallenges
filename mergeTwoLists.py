@@ -20,12 +20,12 @@ class Solution(object):
         headOne, headTwo = list1, list2
 
         while headOne is not None and headTwo is not None:
-            if headOne.val > headTwo.val: 
-                dummyHead.next = ListNode(headOne.val)
+            if headOne.val < headTwo.val: 
+                dummyHead.next = headOne
                 headOne = headOne.next
                 dummyHead = dummyHead.next
             else:
-                dummyHead.next = ListNode(headTwo.val)
+                dummyHead.next = headTwo
                 headTwo = headTwo.next
                 dummyHead = dummyHead.next
         
