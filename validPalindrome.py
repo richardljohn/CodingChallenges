@@ -24,6 +24,7 @@ class Solution(object):
         ord('a') <= ord(c) <= ord('z') or 
         ord('0') <= ord(c) <= ord('9'))
 
+# Test Cases
 s = Solution()
 print(s.isPalindrome("0P"))
 print(s.isPalindrome("Racecar"))
