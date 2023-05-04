@@ -22,7 +22,6 @@ class Solution(object):
             return False
 
 
-
 s = Solution()
-
 print(s.isPalindrome("0P"))
+print(s.isPalindrome("Racecar"))
