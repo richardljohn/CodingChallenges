@@ -28,16 +28,17 @@ b.next = c
 c.next = d
 d.next = e
 
-while a is not None:
-    print(str(a.val) + " ->", end=" ")
-    a = a.next
+temp = a
+
+while temp is not None:
+    print(str(temp.val) + " ->", end=" ")
+    temp = temp.next
 print("None")
 
 s = Solution()
-ans = s.reverseList(a)
+new = s.reverseList(a)
 
-while ans is not None:
-    print(str(ans.val) + " ->", end=" ")
-    ans = ans.next
+while new:
+    print(str(new.val) + " ->", end=" ")
+    new = new.next
 print("None")
-
