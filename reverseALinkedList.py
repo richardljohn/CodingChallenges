@@ -8,16 +8,14 @@ class ListNode(object):
 
 class Solution(object):
     def reverseList(self, head):
-        prev = None
-        curr = head
-        inFront = ListNode(head.next)
+        prev, curr = None, head
 
-        while curr is not None:
+        while curr:
+            nxt = curr.next
             curr.next = prev
             prev = curr
-            curr = inFront
-            inFront = inFront.next
-        return curr
+            curr = nxt
+        return prev
 
 a = ListNode(1)
 b = ListNode(2)
