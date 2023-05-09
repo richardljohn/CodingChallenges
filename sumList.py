@@ -4,15 +4,11 @@ class Node:
         self.next = None
 
 def sumList(head):
-    if head is not None: 
-        sum = 0
-        curr = head
-        while curr is not None: 
-            sum += curr.val
-            curr = curr.next
-        return sum
-    return 0 
-
+    sum = 0 
+    while head is not None:
+        sum += int(head.val)
+        head = head.next
+    return sum
 
 a = Node(1)
 b = Node(2)
