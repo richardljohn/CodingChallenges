@@ -4,8 +4,9 @@ class Node:
         self.next = None
 
 def sumList(head):
-    sum = 0 
-    while head is not None:
+    sum = 0
+    
+    while head:
         sum += int(head.val)
         head = head.next
     return sum
