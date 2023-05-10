@@ -7,10 +7,14 @@ class ListNode(object):
         self.next = next
 
 
-        
+
 class Solution(object):
     def mergeKLists(self, lists):
         """
         :type lists: List[ListNode]
         :rtype: ListNode
         """
+
+    
+    def mergeLists(self, listOne, listTwo):
+        
