@@ -17,4 +17,24 @@ class Solution(object):
 
     
     def mergeLists(self, listOne, listTwo):
+        dummy = ListNode(None)
+        tail = dummy 
+        currOne = listOne
+        currTwo = listTwo
         
+        while currOne is not None and currTwo is not None: 
+            if currOne.val > currTwo.val:
+                tail.next = currTwo
+                currTwo = currTwo.next
+                tail = tail.next
+            else:
+                tail.next = currOne
+                currOne = currOne.next
+                tail = tail.next
+        
+        if currOne is None:
+            tail.next = currTwo
+        if currTwo is None:
+            tail.next = currOne
+        
+        return dummy.next
