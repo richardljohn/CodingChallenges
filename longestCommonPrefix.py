@@ -16,3 +16,10 @@ class Solution(object):
             res += strs[0][i]
 
         return res
+
+# Test Cases 
+
+S = Solution()
+print(S.longestCommonPrefix(["flower","flow","flight"]))
+print(S.longestCommonPrefix(["dog","racecar","car"]))
+print(S.longestCommonPrefix(["car", "cat", "catman", "catmania"]))
