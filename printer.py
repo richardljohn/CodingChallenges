@@ -3,3 +3,7 @@ def hello(name):
 
 name = input("Enter your name: ")
 hello(name)
+hello(name)
+hello(name)
+hello(name)
+hello(name)
