@@ -3,9 +3,3 @@ def hello(name):
 
 name = input("Enter your name: ")
 hello(name)
-name = input("Enter your name: ")
-hello(name)
-name = input("Enter your name: ")
-hello(name)
-name = input("Enter your name: ")
-hello(name)
