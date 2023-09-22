@@ -7,6 +7,7 @@ class Solution(object):
         """
 
         numsMap = {}
+        numsList = []
 
         for num in nums:
             numsMap[num] = 1 + numsMap.get(num, 0)
