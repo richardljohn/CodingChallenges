@@ -7,14 +7,14 @@ class Solution(object):
         """
 
         numsMap = {}
-        numsList = []
 
         for num in nums:
             numsMap[num] = 1 + numsMap.get(num, 0)
         
-        numsMap = sorted(numsMap, key=numsMap.get, reverse=True)
-
-        for i in range(k):
-            numsList.append(list(numsMap[i]))
+        numsList = sorted(numsMap, key=numsMap.get, reverse=True)
         
-        return numsList
+        return numsList[0:k]
+
+s = Solution()
+
+print(s.topKFrequent([1, 1, 1, 2, 2, 3, 4], 2))
