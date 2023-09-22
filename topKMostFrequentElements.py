@@ -18,4 +18,5 @@ class Solution(object):
 
 s = Solution()
 
-print(s.topKFrequent([1, 1, 1, 2, 2, 3, 4], 2))
+print(s.topKFrequent([1, 1, 1, 2, 2, 3, 4], 2)) # [1, 2]
+print(s.topKFrequent([1], 1)) # [1]
