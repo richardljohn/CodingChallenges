@@ -20,3 +20,4 @@ s = Solution()
 
 print(s.topKFrequent([1, 1, 1, 2, 2, 3, 4], 2)) # [1, 2]
 print(s.topKFrequent([1], 1)) # [1]
+print(s.topKFrequent([11, 1, 2, 3, 4, 1, 11, 11, 11, 11, 11], 3)) # [11, 1, 2]
