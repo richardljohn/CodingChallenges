@@ -26,4 +26,5 @@ s = Solution()
 print(s.twoSum([2,7,11,15], 9)) # [0, 1]
 print(s.twoSum([3,2,4], 6)) # [1, 2]
 print(s.twoSum([3,3], 6)) # [0, 1]
-print(s.twoSum([1, 2, 3, 4, 5, 6, 7, 8], 9))
+print(s.twoSum([1, 2, 3, 4, 5, 6, 7, 8], 9)) # [3, 4]
+print(s.twoSum([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 100)) # []
