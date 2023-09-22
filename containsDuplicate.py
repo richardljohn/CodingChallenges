@@ -5,14 +5,16 @@ def containsDuplicate(nums):
         :type nums: List[int]
         :rtype: bool
         """
-        
-        duplicate = set() 
 
-        for i in range(len(nums)):
-            if nums[i] in duplicate:
+        duplicates = set()
+        i = 0
+
+        while i < len(nums):
+            if nums[i] in duplicates:
                 return True
-            duplicate.add(nums[i])
-
+            else: 
+                duplicates.add(nums[i])
+                i += 1
         return False
 
 print(containsDuplicate([1, 2, 3, 1])) #True

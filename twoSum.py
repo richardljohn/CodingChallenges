@@ -7,19 +7,22 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        prevMap = {}
+        complimentMap = {}
 
-        for i, n in enumerate(nums):
-            diff = target - n
-            if diff in prevMap:
-                return [prevMap[diff], i]
-            prevMap[n] = i
-        return 
+        for i in range(len(nums)):
+            compliment = target - nums[i]
+            if compliment in complimentMap:
+                return [complimentMap[compliment], i]
+            else:
+                complimentMap[nums[i]] = i
+        return []
+
+        
 
 
 s = Solution()
 
 # Testcases
-print(s.twoSum([2,7,11,15], 9))
-print(s.twoSum([3,2,4], 6))
-print(s.twoSum([3,3], 6))
+print(s.twoSum([2,7,11,15], 9)) # [0, 1]
+print(s.twoSum([3,2,4], 6)) # [1, 2]
+print(s.twoSum([3,3], 6)) # [0, 1]
