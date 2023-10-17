@@ -1,7 +1,6 @@
 # LeetCode #238 - Product of Array Except Self
 
 class Solution(object):
-
     def productExceptSelf(self, nums):
         """
         :type nums: List[int]
@@ -20,6 +19,9 @@ class Solution(object):
             result[i] = result[i] * postfix
             postfix = postfix * nums[i]
         
-        return result
+        return result  
         
 s = Solution()
+print(s.productExceptSelf([1, 2, 3, 4])) # [24, 12, 8, 6]
+print(s.productExceptSelf([-1, 1, 0, -3, 3])) # [0, 0, 9, 0, 0]
+print(s.productExceptSelf([1, 1, 1, 1])) # [1, 1, 1, 1]
