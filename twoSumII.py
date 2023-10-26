@@ -7,8 +7,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        l = 0
-        r = len(numbers) - 1
+
 
         while l < r: 
             currentSum = numbers[l] + numbers[r]
