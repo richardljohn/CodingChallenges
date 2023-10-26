@@ -1,5 +1,9 @@
 # Leetcode #167 - Two Sum II (Done)
 
+# A bit of a weird one with the output. You treat it as a regular array, but you must return the 
+# indices as one more than their actual index. For example, if your solution has the indices
+# 0 and 1, you must return 1 and 2 as your answer.
+
 class Solution(object):
     def twoSum(self, numbers, target):
         """
