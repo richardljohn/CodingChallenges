@@ -15,8 +15,10 @@ class Solution(object):
 
             if currentSum < target: 
                 l += 1
-            if currentSum > target: 
+
+            elif currentSum > target: 
                 r -= 1
+
             else: 
                 return [l + 1, r + 1]
         
