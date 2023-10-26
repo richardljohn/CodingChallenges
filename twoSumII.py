@@ -7,4 +7,17 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        l = 0
+        r = len(numbers) - 1
+
+        while l < r: 
+            currentSum = numbers[l] + numbers[r]
+
+            if currentSum < target: 
+                l += 1
+            if currentSum > target: 
+                r -= 1
+            else: 
+                return [l + 1, r + 1]
         
+        return []
