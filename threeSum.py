@@ -55,9 +55,8 @@ print(s.threeSum([0,1,1]))
 # Explanation: The only possible triplet sums up to 0.
 print(s.threeSum([0, 0, 0]))
 
-# nums = [1, 2, 3, 4, 5]
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 # nums.sort()
-
 
 # for i, a in enumerate(nums): 
 #     print("i = " + str(i) + ", a = " + str(a))
