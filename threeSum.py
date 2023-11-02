@@ -16,7 +16,6 @@ class Solution(object):
 
             l = i + 1
             r = len(nums) - 1
-
             while l < r:
                 threeSum = a + nums[l] + nums[r]
                 if threeSum > 0: 
@@ -55,6 +54,7 @@ print(s.threeSum([0,1,1]))
 # Output: [[0,0,0]]
 # Explanation: The only possible triplet sums up to 0.
 print(s.threeSum([0, 0, 0]))
+
 # nums = [1, 2, 3, 4, 5]
 # nums.sort()
 
