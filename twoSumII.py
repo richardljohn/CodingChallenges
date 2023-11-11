@@ -46,3 +46,5 @@ print(s.twoSum([2, 3, 4], 6))
 # Output: [1,2]
 # Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
 print(s.twoSum([-1, 0], -1))
+
+# All examples passed
