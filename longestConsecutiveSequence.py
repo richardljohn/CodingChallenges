@@ -8,13 +8,13 @@ class Solution(object):
         """
         
         numSet = set(nums)
-        currSequence = 0
         longest = 0
 
-        for n in numSet:
+        for n in nums:
             if (n - 1) in numSet:
-                currSequence += 1 
-                while (n + length) in numSet:
+                currSequence = 0
+                while (n + currSequence) in numSet:
                     currSequence += 1
                 longest = max(currSequence, longest)
+
         return longest
