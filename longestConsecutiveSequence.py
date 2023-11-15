@@ -11,4 +11,10 @@ class Solution(object):
         currSequence = 0
         longest = 0
 
-        
+        for n in numSet:
+            if (n - 1) in numSet:
+                currSequence += 1 
+                while (n + length) in numSet:
+                    currSequence += 1
+                longest = max(currSequence, longest)
+        return longest
