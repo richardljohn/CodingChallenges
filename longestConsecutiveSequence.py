@@ -11,7 +11,7 @@ class Solution(object):
         longest = 0
 
         for n in nums:
-            if (n - 1) in numSet:
+            if (n - 1) not in numSet:
                 currSequence = 0
                 while (n + currSequence) in numSet:
                     currSequence += 1
