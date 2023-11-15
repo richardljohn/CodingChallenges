@@ -8,3 +8,7 @@ class Solution(object):
         """
         
         numSet = set(nums)
+        currSequence = 0
+        longest = 0
+
+        
