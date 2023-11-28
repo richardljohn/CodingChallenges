@@ -7,3 +7,5 @@ class Solution(object):
         :rtype: int
         """
         maxWater = 0
+
+        return maxWater
