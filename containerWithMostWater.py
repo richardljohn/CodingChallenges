@@ -26,9 +26,9 @@ class Solution(object):
             maxWater = max(area, maxWater)
 
             if height[l] < height[r]:
-                r -= 1
-            else: 
                 l += 1
+            else: 
+                r -= 1
 
         return maxWater
 
