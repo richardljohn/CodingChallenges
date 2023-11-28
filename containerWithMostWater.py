@@ -22,7 +22,7 @@ class Solution(object):
         r = len(height) - 1
 
         while l < r: 
-            area = (l - r) * min(height[l], height[r])
+            area = (r - l) * min(height[l], height[r])
             maxWater = max(area, maxWater)
 
             if height[l] < height[r]:
