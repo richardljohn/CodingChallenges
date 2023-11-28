@@ -9,11 +9,12 @@ class Solution(object):
         maxWater = 0
 
         # Brute Force
+        # Does not work
 
-        for l in range(len(height)):
-            for r in range(1 + l, len(height)):
-                area = (r - l) * min(height[l], height[r])
-                maxWater = max(maxWater, area)
+        # for l in range(len(height)):
+        #     for r in range(1 + l, len(height)):
+        #         area = (r - l) * min(height[l], height[r])
+        #         maxWater = max(maxWater, area)
 
         return maxWater
 
