@@ -6,15 +6,20 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        maxWater = 0
 
         # Brute Force
         # Does not work
+
+        # maxWater = 0
 
         # for l in range(len(height)):
         #     for r in range(1 + l, len(height)):
         #         area = (r - l) * min(height[l], height[r])
         #         maxWater = max(maxWater, area)
+
+        maxWater = 0
+        l = 0
+        r = len(height) - 1
 
         return maxWater
 
