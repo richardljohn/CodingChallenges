@@ -1,4 +1,4 @@
-# Leetcode #42 - Trapping Rain Water
+# Leetcode #42 - Trapping Rain Water (Done)
 
 class Solution:
     def trap(self, height: list[int]) -> int:
