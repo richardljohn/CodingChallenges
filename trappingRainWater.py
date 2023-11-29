@@ -1,7 +1,7 @@
 # Leetcode #42 - Trapping Rain Water
 
 class Solution:
-    def trap(self, height: List[int]) -> int:
+    def trap(self, height: list[int]) -> int:
 
         totalWater = 0
         l, r = 0, len(height) - 1
@@ -9,15 +9,16 @@ class Solution:
 
         while l < r: 
             if maxLeft < maxRight: 
+                l += 1
                 water = maxLeft - height[l]
                 totalWater += water if water > 0 else 0
                 maxLeft = max(maxLeft, height[l])
-                l += 1
-            else: 
+                
+            else:
+                r -= 1
                 water = maxRight - height[r]
                 totalWater += water if water > 0 else 0
                 maxRight = max(maxRight, height[r])
-                r -= 1
                 
         return totalWater
 
