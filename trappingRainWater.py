@@ -25,5 +25,5 @@ class Solution:
 S = Solution()
 
 # Testcases
-print(S.trap([0,1,0,2,1,0,1,3,2,1,2,1]))
-print(S.trap([4,2,0,3,2,5]))
+print(S.trap([0,1,0,2,1,0,1,3,2,1,2,1])) # Expected Answer = 6, Answer = 6
+print(S.trap([4,2,0,3,2,5])) # Expected Answer = 9, Answer = 9
