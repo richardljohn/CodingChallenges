@@ -3,17 +3,20 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
 
-        water = 0
+        totalWater = 0
         l, r = 0, len(height) - 1
-        maxLeft, maxRight = 0, 0 
+        maxLeft, maxRight = height[l], height[r]
 
         while l < r: 
-            maxLeft = max(maxLeft, height[l])
-            maxRight = max(maxRight, height[r])
-
             if maxLeft < maxRight: 
+                water = maxLeft - height[l]
+                totalWater += water if water > 0 else 0
+                maxLeft = max(maxLeft, height[l])
                 l += 1
-                total = maxLeft - height[l]
-                water += total if total > 0 else 0
-            else:
+            else: 
+                water = maxRight - height[r]
+                totalWater += water if water > 0 else 0
+                maxRight = max(maxRight, height[r])
                 r -= 1
+                
+        return totalWater
