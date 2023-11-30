@@ -6,26 +6,22 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        
+
+        l = 0
         maxString = 0
-        l, r = 0, 0
         characters = set()
 
-        while r < len(s):
-            stringLength = 0
-            if s[r] not in characters: 
-                characters.add(s[r])
-                stringLength += 1
-            else: 
-                characters.clear()
-                maxString = max(maxString, stringLength)
-            r += 1
-            l = r
+        for r in range(len(s)):
+            while s[r] in characters: 
+                characters.remove(s[l])
+                l += 1
+            characters.add(s[r])
+            maxString = max(maxString, r - l + 1)
         return maxString
 
 S = Solution()
 
 #Testcases
-print(S.lengthOfLongestSubstring("abcabcbb"))
-print(S.lengthOfLongestSubstring("bbbbb"))
-print(S.lengthOfLongestSubstring("pwwkew"))
+print(S.lengthOfLongestSubstring("abcabcbb")) #Expected = 3, Answer = 1
+print(S.lengthOfLongestSubstring("bbbbb")) #Expected = 1, Answer = 1
+print(S.lengthOfLongestSubstring("pwwkew")) #Expected = 3, Answer = 3
