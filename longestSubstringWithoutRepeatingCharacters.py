@@ -23,5 +23,9 @@ class Solution(object):
             l = r
         return maxString
 
+S = Solution()
 
-                
+#Testcases
+print(S.lengthOfLongestSubstring("abcabcbb"))
+print(S.lengthOfLongestSubstring("bbbbb"))
+print(S.lengthOfLongestSubstring("pwwkew"))
