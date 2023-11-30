@@ -14,7 +14,10 @@ class Solution(object):
             if prices[l] < prices[r]:
                 profit = prices[l] - prices[r]
                 maxProfit = max(maxProfit, profit)
+            
             else: 
                 l = r
+            
             r += 1
+        
         return maxProfit
