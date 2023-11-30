@@ -23,5 +23,5 @@ class Solution(object):
 S = Solution()
 
 #Testcases
-print(S.maxProfit([7,1,5,3,6,4]))
-print(S.maxProfit([7,6,4,3,1]))
+print(S.maxProfit([7,1,5,3,6,4])) #Expected = 5, Answer = 5
+print(S.maxProfit([7,6,4,3,1])) #Expected = 0, Answer = 0
