@@ -21,3 +21,9 @@ class Solution(object):
             r += 1
         
         return maxProfit
+
+S = Solution()
+
+#Testcases
+print(S.maxProfit([7,1,5,3,6,4]))
+print(S.maxProfit([7,6,4,3,1]))
