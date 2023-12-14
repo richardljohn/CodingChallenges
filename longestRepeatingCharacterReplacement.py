@@ -25,7 +25,6 @@ class Solution(object):
         return result
 
 S = Solution()
-
 # Example 1:
 # Input: s = "ABAB", k = 2
 # Output: 4
