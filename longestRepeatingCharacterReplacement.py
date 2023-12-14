@@ -1,3 +1,5 @@
+# Leetcode #424 - Longest Repeating Character Replacement
+
 class Solution(object):
     def characterReplacement(self, s, k):
         """
