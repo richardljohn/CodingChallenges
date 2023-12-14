@@ -20,9 +20,9 @@ class Solution(object):
                 charMap[s[l]] -= 1
                 l += 1
             
-            res = max(res, r - l - 1)
+            result = max(result, r - l - 1)
         
-        return res
+        return result
 
 S = Solution()
 
