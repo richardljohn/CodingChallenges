@@ -17,6 +17,11 @@ class Solution(object):
             charMap[s[r]] = 1 + charMap.get(s[r], 0)
 
             while (r - 1 + 1) - max(charMap.values()) > k: 
-                
+                charMap[s[l]] -= 1
+                l += 1
+            
+            res = max(res, r - l - 1)
+        
+        return res
 
 S = Solution()
