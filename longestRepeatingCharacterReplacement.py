@@ -8,3 +8,15 @@ class Solution(object):
         :rtype: int
         """
         
+        charMap = {}
+        result = 0
+
+        l = 0 
+        
+        for r in range(len(s)):
+            charMap[s[r]] = 1 + charMap.get(s[r], 0)
+
+            while (r - 1 + 1) - max(charMap.values()) > k: 
+                
+
+S = Solution()
