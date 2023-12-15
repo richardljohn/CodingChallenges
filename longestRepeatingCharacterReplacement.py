@@ -3,14 +3,17 @@
 import collections
 
 
-class Solution(object):
-    def characterReplacement(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
-        # Time Complexity :  O(n)
+
+
+# class Solution(object):
+#     def characterReplacement(self, s, k):
+#         """
+#         :type s: str
+#         :type k: int
+#         :rtype: int
+#         """
+
+# Time Complexity :  O(n)
 # Space Complexity : O(1)
 class Solution(object):
     def characterReplacement(self, s, k):
