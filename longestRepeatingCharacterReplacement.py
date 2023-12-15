@@ -1,5 +1,8 @@
 # Leetcode #424 - Longest Repeating Character Replacement
 
+import collections
+
+
 class Solution(object):
     def characterReplacement(self, s, k):
         """
@@ -7,24 +10,37 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        
-        charMap = {}
-        result = 0
+        # Time Complexity :  O(n)
+# Space Complexity : O(1)
+class Solution(object):
+    def characterReplacement(self, s, k):
+        maxlen, largestCount = 0, 0
+        arr = collections.Counter()
+        for idx in range(len(s)):
+            arr[s[idx]] += 1
+            largestCount = max(largestCount, arr[s[idx]])
+            if maxlen - largestCount >= k:
+                arr[s[idx - maxlen]] -= 1
+            else:
+                maxlen += 1
+        return maxlen
+        # count = {}
+        # res = 0
 
-        l = 0 
+        # l = 0 
+        # maxf = 0
+        # for r in range(len(s)):
+        #     count[s[r]] = 1 + count.get(s[r], 0)
+        #     maxf = max(maxf, count[s[r]])
+        #     while (r - 1 + 1) - maxf > k: 
+        #         count[s[l]] -= 1
+        #         l += 1
+        #     res = max(res, r - l + 1)
         
-        for r in range(len(s)):
-            charMap[s[r]] = 1 + charMap.get(s[r], 0)
-
-            while (r - 1 + 1) - max(charMap.values()) > k: 
-                charMap[s[l]] -= 1
-                l += 1
-            
-            result = max(result, r - l + 1)
-        
-        return result
+        # return res
 
 S = Solution()
+
 # Example 1:
 # Input: s = "ABAB", k = 2
 # Output: 4
