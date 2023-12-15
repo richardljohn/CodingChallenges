@@ -20,7 +20,7 @@ class Solution(object):
                 charMap[s[l]] -= 1
                 l += 1
             
-            result = max(result, r - l - 1)
+            result = max(result, r - l + 1)
         
         return result
 
