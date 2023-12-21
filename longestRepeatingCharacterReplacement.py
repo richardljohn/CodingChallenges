@@ -1,4 +1,4 @@
-# Leetcode #424 - Longest Repeating Character Replacement (Done)
+# Leetcode #424 - Longest Repeating Character Replacement ()
 
 import collections
 
