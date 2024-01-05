@@ -1,4 +1,4 @@
-# Leetcode #20 - Valid Paranthesis
+# Leetcode #20 - Valid Paranthesis (Done)
 
 class Solution(object):
     def isValid(self, s):
