@@ -11,7 +11,7 @@ class Solution(object):
         l, end = 0, len(s)
         
         stack = []
-        brackets = { ")" : "(", "]" : "[", "}": "{" }
+        brackets = { ")" : "(", "]" : "[", "}": "{" } # Each bracket must match
 
         for c in s: 
             if c in brackets: 
