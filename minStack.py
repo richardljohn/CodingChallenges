@@ -40,8 +40,11 @@ class MinStack(object):
 
 
 # Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(val)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
+minStack = MinStack()
+minStack.push(-2)
+minStack.push(0)
+minStack.push(-3)
+print(minStack.getMin()) # return -3
+minStack.pop()
+print(minStack.top() )   # return 0
+print(minStack.getMin()) # return -2
