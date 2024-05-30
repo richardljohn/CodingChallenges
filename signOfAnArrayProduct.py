@@ -18,4 +18,5 @@ class Solution(object):
         return product
 
 S = Solution()
-print(S.arraySign([-1,-2,-3,-4,3,2,1]))
+print(S.arraySign([-1,-2,-3,-4,3,2,1])) 
+# Expect 1, Returned 1
