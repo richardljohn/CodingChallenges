@@ -24,14 +24,7 @@ def fiveSort(nums):
 print(fiveSort([5, 5, 1, 2, 3]))
 
 
-# Pseudocode.
-# Have a pointer at the end of the array
-# For loop. 
-# If you encounter a 5:
-# Swap current place with pointer. 
-# move pointer up by 1.
-# when loop reaches same spot as the pointer, end the loop.
-# else, continue.
+
 
 # Explanation: 
 # There are two pointers. One at the start and one at the end. 
