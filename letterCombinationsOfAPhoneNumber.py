@@ -3,9 +3,8 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         
-
         res = []
-
+        
         digitsToChars = { 
             "2": "abc",
             "3": "def",
@@ -27,3 +26,5 @@ class Solution:
             
         if digits: 
             backtrack(0, "")
+
+        return res
