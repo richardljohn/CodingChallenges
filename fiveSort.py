@@ -35,4 +35,4 @@ print(fiveSort([5, 5, 1, 2, 3]))
 # else, continue.
 
 # Explanation: 
-# 
+# There are two pointers. One at the start and one at the end.
