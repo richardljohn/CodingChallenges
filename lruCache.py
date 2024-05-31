@@ -1,6 +1,7 @@
 # Leetcodde 146 - LRU Cache
 
 class Node: 
+    
     def __init__(self, key, val): 
         self.key, self.val = key, val
         self.prev = self.next = None
@@ -32,6 +33,7 @@ class LRUCache:
     def put(self, key: int, value: int) -> None:
         if key in self.cache: 
             self.remove(self.cache[key])
+
         self.cache[key] = Node(key, value)
         self.insert(self.cache[key])
 
