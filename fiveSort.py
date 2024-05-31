@@ -35,4 +35,14 @@ print(fiveSort([5, 5, 1, 2, 3]))
 # else, continue.
 
 # Explanation: 
-# There are two pointers. One at the start and one at the end.
+# There are two pointers. One at the start and one at the end. 
+# With each iteration of the loop, we will do a few checks.
+# Check to see if the end pointer is at a 5. If it does:
+# We move the end pointer up by one space.
+# If it is not: 
+# We check the pointer at the start and see if it is at a 5. 
+# If it is: 
+# We swap the left pointer value with the one at the end. 
+# Afterwards we move the left pointer up one space.
+# If neither condition is true, we simply move the left pointer up one. 
+# This will resume until the left pointer is either at the same spot as the right pointer, or past it.
