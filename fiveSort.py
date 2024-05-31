@@ -33,3 +33,6 @@ print(fiveSort([5, 5, 1, 2, 3]))
 # move pointer up by 1.
 # when loop reaches same spot as the pointer, end the loop.
 # else, continue.
+
+# Explanation: 
+# 
