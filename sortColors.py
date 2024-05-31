@@ -9,7 +9,6 @@ class Solution:
             nums[j] = temp
 
         i, l, r = 0, 0, len(nums) - 1
-
         while i <= r: 
             if nums[i] == 0: 
                 swap(l, i)
