@@ -38,4 +38,3 @@ print(fiveSort([5, 5, 1, 2, 3]))
 # Afterwards we move the left pointer up one space.
 # If neither condition is true, we simply move the left pointer up one. 
 # This will resume until the left pointer is either at the same spot as the right pointer, or past it.
-# Then we are done.
