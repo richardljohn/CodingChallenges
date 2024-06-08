@@ -1,5 +1,8 @@
 # Leetcode #17 - Letter Combinations of a Phone Number
 
+from typing import List
+
+
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         
