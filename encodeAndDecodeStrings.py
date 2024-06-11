@@ -25,7 +25,7 @@ class Solution:
 
         return decodedStrs
 
-strings = ["I", "am", "Batman"]
+strings = ["I", "am", "the", "Batman"]
 
 S = Solution()
 strings = S.encode(strings)
