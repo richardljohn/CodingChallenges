@@ -30,7 +30,7 @@ class Solution:
 
         return " ".join(decodedStr)
 
-strings = ["I", "am", "the", "Batman"]
+strings = ["I", "am", "Batman"]
 
 S = Solution()
 strings = S.encode(strings)
