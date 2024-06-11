@@ -25,8 +25,14 @@ class Solution:
 
         return decodedStrs
 
+    def decodeAndPrint(self, s: str) -> list[str]:
+        decodedStr = self.decode(s)
+
+        return " ".join(decodedStr)
+
 strings = ["I", "am", "the", "Batman"]
 
 S = Solution()
 strings = S.encode(strings)
 print(S.decode(strings))
+print(S.decodeAndPrint(strings))
