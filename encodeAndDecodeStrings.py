@@ -31,7 +31,5 @@ class Solution:
 
 strings = ["I", "am", "Batman"]
 S = Solution()
-
 strings = S.encode(strings)
-
 print(S.decode(strings))
