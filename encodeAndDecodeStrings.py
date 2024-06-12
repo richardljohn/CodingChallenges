@@ -31,7 +31,7 @@ class Solution:
         return " ".join(decodedStr)
 
 strings = ["I", "am", "Batman"]
-stringTwo = ["I", "am", "the", "goat"]
+stringTwo = ["I", "am", "the", "g"]
 
 S = Solution()
 strings = S.encode(strings)
