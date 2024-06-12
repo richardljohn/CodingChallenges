@@ -32,6 +32,8 @@ class Solution:
 
 strings = ["I", "am", "Batman"]
 
+stringTwo = ["I", "am", "the", "goat"]
+
 S = Solution()
 strings = S.encode(strings)
 print(S.decode(strings))
