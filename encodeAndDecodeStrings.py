@@ -28,14 +28,14 @@ class Solution:
 
         return " ".join(decodedStr)
 
-strings = ["I", "am", "the", "Batman"]
+stringsOne = ["I", "am", "the", "Batman"]
 stringsTwo = ["I", "am", "the", "goat"]
 stringsThree = ["Anyone", "know", "the", "answer?"]
 
 S = Solution()
-strings = S.encode(strings)
-print(S.decode(strings))
-print(S.decodeAndPrint(strings))
+stringsOne = S.encode(stringsOne)
+print(S.decode(stringsOne))
+print(S.decodeAndPrint(stringsOne))
 stringsTwo = S.encode(stringsTwo)
 print(S.decode(stringsTwo))
 print(S.decodeAndPrint(stringsTwo))
