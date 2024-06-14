@@ -30,6 +30,7 @@ class Solution:
 
 strings = ["I", "am", "the", "Batman"]
 stringsTwo = ["I", "am", "the", "goat"]
+stringsThree = ["Anyone", "know", "the", "answer?"]
 
 S = Solution()
 strings = S.encode(strings)
@@ -38,3 +39,6 @@ print(S.decodeAndPrint(strings))
 stringsTwo = S.encode(stringsTwo)
 print(S.decode(stringsTwo))
 print(S.decodeAndPrint(stringsTwo))
+stringsThree = S.encode(stringsThree)
+print(S.decode(stringsThree))
+print(S.decodeAndPrint(stringsThree))
