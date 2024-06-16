@@ -3,10 +3,13 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
 
+        # Hash Map
         count = {}
+        # Max Window 
         res = 0
+        # Sliding Window
         l = 0
-
+        
         for r in range(len(s)):
             count[s[r]] = 1 + count.get(s[r], 0)
 
