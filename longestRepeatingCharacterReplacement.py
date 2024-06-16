@@ -21,6 +21,3 @@ S = Solution()
 string = "AAABABA"
 k = 2
 print(S.characterReplacement(string, k))
-string = "AAABBBAAB"
-swaps = 1
-print(S.characterReplacement(string, swaps))
