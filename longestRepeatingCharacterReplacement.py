@@ -11,7 +11,7 @@ class Solution:
             count[s[r]] = 1 + count.get(s[r], 0)
 
             while (r - l + 1) - max(count.values()) > k:
-                count[s[r]] -= 1
+                count[s[l]] -= 1
                 l += 1
             
             res = max(res, r - l + 1)
@@ -21,3 +21,6 @@ S = Solution()
 string = "AAABABA"
 k = 2
 print(S.characterReplacement(string, k))
+string = "AAABBBAAB"
+swaps = 1
+print(S.characterReplacement(string, swaps))
