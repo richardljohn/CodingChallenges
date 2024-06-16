@@ -16,3 +16,8 @@ class Solution:
             
             res = max(res, r - l + 1)
         return res
+
+S = Solution()
+string = "AAABABA"
+k = 2
+print(S.characterReplacement(string, k))
