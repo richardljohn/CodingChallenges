@@ -5,4 +5,6 @@ import collections
 
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
+        longestChar = 0
         
+        return longestChar
