@@ -6,3 +6,9 @@ class Solution:
         num = str(x)
 
         return num == num[::-1]
+
+S = Solution()
+
+print(S.isPalindrome(975))
+print(S.isPalindrome(121))
+print(S.isPalindrome(-121))
