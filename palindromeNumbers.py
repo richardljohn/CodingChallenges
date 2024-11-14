@@ -9,6 +9,6 @@ class Solution:
 
 S = Solution()
 
-print(S.isPalindrome(975))
-print(S.isPalindrome(121))
-print(S.isPalindrome(-121))
+print(S.isPalindrome(975)) # False
+print(S.isPalindrome(121)) # True
+print(S.isPalindrome(-121)) # False
