@@ -15,3 +15,4 @@ class Solution:
 S = Solution()
 print(S.strStr("leetcode", "leeto"))
 print(S.strStr("samsaidhi", "hi"))
+print(S.strStr("letterman", "let"))
