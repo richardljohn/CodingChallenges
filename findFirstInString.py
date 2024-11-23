@@ -10,3 +10,7 @@ class Solution:
             if haystack[i:i+len(needle)] == needle:
                  return i
         return -1
+
+# Test
+S = Solution()
+print(S.strStr("leetcode", "leeto"))
