@@ -14,3 +14,4 @@ class Solution:
 # Test
 S = Solution()
 print(S.strStr("leetcode", "leeto"))
+print(S.strStr("leetcode", "leeto"))
