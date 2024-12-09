@@ -11,7 +11,7 @@ class Solution:
             second = abs(heapq.heappop(stones))
 
             if first > second:
-                heap.heappush(stones, -1*(first-second))
+                heapq.heappush(stones, -1*(first-second))
         
         if not stones:
             return 0 
