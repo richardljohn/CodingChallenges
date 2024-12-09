@@ -14,4 +14,5 @@ class Solution:
         
         if not stones:
             return 0 
+            
         return abs(stones[0])
