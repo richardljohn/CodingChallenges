@@ -11,9 +11,7 @@ class Solution:
         while head:
             temp = head.next
             head.next = node
-            node = temp
+            node = head
             head = temp
         
-        return node
-
-        
+        return node 
