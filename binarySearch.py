@@ -13,8 +13,14 @@ class Solution:
                 r = mid - 1
         return -1
 
+S = Solution()
+
 # Input: nums = [-1,0,3,5,9,12], target = 9
-# Output: 4
+# Expected Output: 4
+print(S.search([-1,0,3,5,9,12], 9))
+# Output: 
 
 # Input: nums = [-1,0,3,5,9,12], target = 2
-# Output: -1
+# Expected Output: -1
+print(S.search([-1,0,3,5,9,12], 2))
+# Output: 
