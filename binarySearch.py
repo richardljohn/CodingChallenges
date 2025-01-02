@@ -1,5 +1,6 @@
-# Leetcode #704 - Binary Search (Done)
+# Leetcode #704 - Binary Search (Done).
 
+# Libraries
 from ast import List
 
 class Solution:
