@@ -1,4 +1,4 @@
-# Leetcode #704 - Binary Search
+# Leetcode #704 - Binary Search (Done)
 
 from ast import List
 
