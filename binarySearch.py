@@ -22,9 +22,9 @@ S = Solution()
 # Input: nums = [-1,0,3,5,9,12], target = 9
 # Expected Output: 4
 print(S.search([-1,0,3,5,9,12], 9))
-# Output: 4
+# Output: 4 (Good)
 
 # Input: nums = [-1,0,3,5,9,12], target = 2
 # Expected Output: -1
 print(S.search([-1,0,3,5,9,12], 2))
-# Output: -1
+# Output: -1 (Good)
