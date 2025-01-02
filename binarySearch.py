@@ -1,5 +1,7 @@
 # Leetcode #704 - Binary Search
 
+from ast import List
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         l, r = 0, len(nums) - 1
@@ -18,9 +20,9 @@ S = Solution()
 # Input: nums = [-1,0,3,5,9,12], target = 9
 # Expected Output: 4
 print(S.search([-1,0,3,5,9,12], 9))
-# Output: 
+# Output: 4
 
 # Input: nums = [-1,0,3,5,9,12], target = 2
 # Expected Output: -1
 print(S.search([-1,0,3,5,9,12], 2))
-# Output: 
+# Output: -1
